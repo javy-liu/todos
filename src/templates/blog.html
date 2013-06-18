@@ -1,0 +1,50 @@
+<li>
+	<div class="left">
+		<time class="cbp_tmtime" datetime="<%-date%>">
+		<span><%-date%></span>
+		</time>
+		<div class="author">
+			<span><%-author%></span>
+		</div>
+		
+	</div>
+	<img class="author_icon" src="<%-authorImg%>"/>   
+	
+	<div class="right">
+		
+		<header><div class="comments">
+			  <a href="<%-commentsUrl%>"><i class="icon-comments"></i><span><%-commentsNum%></span></a>
+			</div>
+			<h2><%-title%></h2>
+			
+		</header>
+		<div class="content">
+			<%-content%>
+			<div class="detail <%= show ? '' : 'hide' %>">
+				<%if(template){%>
+					<%=template%>
+				<%}%>
+			</div> 
+			
+                 
+                  
+                  
+                  
+                </div><!-- ./ .content -->
+
+         <div class="toolbar">
+			 <span class="<%= show ? 'hide' : '' %>">
+			 	<a href="#detail">
+			 		详细全文 <i class="icon-circle-arrow-right"></i>
+			 	</a>
+			 </span>
+			 <span class="pull-right <%= show ? '' : 'hide' %>">
+			 	<a href="#back">
+			 		返回目录 <i class="icon-circle-arrow-left"></i>
+			 	</a>
+			 </span>
+		</div><!-- ./ .toolbar -->
+	    </div> <!-- ./ .right -->      
+		
+</li>
+

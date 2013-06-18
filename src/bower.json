@@ -1,0 +1,17 @@
+{
+  "name": "requireSPA",
+  "version": "0.0.1",
+  "main": "js/a.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.2",
+   "underscore": "~1.4.4",
+   "requirejs": "~2.1.6",
+    "backbone": "~1.0.0"
+
+  }
+}
