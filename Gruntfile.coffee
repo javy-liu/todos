@@ -171,6 +171,17 @@ module.exports = (grunt)->
 				dest: "#{ASSETS_PATH}"
 				ext: '.js'
 
+			test:
+				options:
+					bare: true
+				expand: true		       
+				cwd: "test"
+				src: [
+					"**/*.coffee"
+				]
+				dest: "test"
+				ext: '.js'
+
 		# watch Task
 		watch:
 			default:
@@ -193,7 +204,8 @@ module.exports = (grunt)->
 			test:
 				options:
 					port:9001
-					base:'./test'
+					keepalive:true
+					base:"#{ASSETS_PATH}"
 			default:
 				options:
 					port:9000

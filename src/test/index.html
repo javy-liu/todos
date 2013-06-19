@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUnit Test Suite</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="../components/qunit/qunit.css">
+    
+</head>
+<body>
+    <h1 id="qunit-header">QUnit Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests">test markup, hidden.</ol>
+    
+
+    <!-- 加载qunit -->
+    <script src="../components/qunit/qunit.js"></script>
+    <!-- 加载requirejs -->
+  <!-- 为了实现配置全局化最好 后面再加载主函数 因为是异步请求所以主体不一定只有一个 -->
+  <script src="../components/requirejs/require.js"></script>
+  <script src="config.js"></script>
+  
+  <!-- 主函数 -->
+  <script src="app.js"></script>
+</body>
+</html>

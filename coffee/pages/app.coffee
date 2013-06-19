@@ -1,9 +1,11 @@
 require [
 	'jquery'
+	'views/app'
 	'routers/router'
+	
 	]
-	,($,appRouter)->
+	,($,appView,Workspace)->
 
-		
+		Backbone.history.start()
 			
 		

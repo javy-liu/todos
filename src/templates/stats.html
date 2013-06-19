@@ -1,0 +1,15 @@
+<span id="todo-count">有<strong><%= remaining %></strong>条记录</span>
+<ul id="filters">
+	<li>
+		<a class="selected" href="#/">全部</a>
+	</li>
+	<li>
+		<a href="#/active">未选中</a>
+	</li>
+	<li>
+		<a href="#/completed">选中</a>
+	</li>
+</ul>
+<% if ( completed ) { %>
+<button id="clear-completed">清除选中 (<%= completed %>条)</button>
+<% } %>
